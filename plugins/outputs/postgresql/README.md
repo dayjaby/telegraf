@@ -161,7 +161,7 @@ tag_table_add_column_templates = [
 Some PostgreSQL-compatible databases don't allow modification of table schema after initial creation. This example works around the limitation by creating a new table and then using a view to join them together.
 
 ```toml
-tags_as_foreignkeys = true
+tags_as_foreign_keys = true
 schema = 'telegraf'
 create_templates = [
     '''CREATE TABLE {{ .table }} ({{ .allColumns }})''',
